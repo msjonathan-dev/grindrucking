@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rucking Event</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f2f4f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      float: right;
+    }
+
+    img {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.4;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+    }
+
+    .details {
+      margin-left: none;
+      width: 400px;
+    } 
+
+    #price {
+      font-size: 24px;
+    }
+
+    #discount {
+      color: red;
+      text-decoration: line-through;
+    }
+
+    #spots {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(0, 158, 3);
+    }
+
+    button {
+      background: #000000;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    #rules {
+      font-size: 16px;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .container {
+        flex-direction: column;
+      }
+
+      .medal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div class="medal">
+        <img src="medal_10k.png" alt="Rucking Medal">
+      </div>
+      <div class="details">
+        <p>
+          The Forward Operating Site (FOS) in Poland is kicking off a virtual 10k ruck challenge designed to test participants’ strength and stamina. Each competitor will ruck with a minimum of 35 lbs and complete the 10k route, pushing yourself to maintain pace and momentum through distance and time. The goal is to highlight the top ruckers who can tackle the ruck with grit, speed, and determination.
+        </p>
+        <p id="price">$25.00 USD <span id="discount">$35.00</span></p>
+        <p>Dates: 1 - 7 February 2026 | Deadline: 7 January 2026</p>
+        <p>Receive a rucking certificate and record your time in the <a href="topruckers.html">Top Ruckers</a>.</p>
+        <p id="spots">30<span id="rem"></span> remaining</span></p>
+        <button onclick="window.location.href='register.html'">Register Now</button>
+        <p><a href="submitruck.html">Submit your ruck!</a></p>
+        <p id="rules">Rules: Upload a JPG or PNG of the route with distance, time and date.</p>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

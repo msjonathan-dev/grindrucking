@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>10k Top Ruckers</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f2f4f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    p {
+      font-size: 18px;
+      color: #444;
+      text-align: center;
+    }
+
+    #rucker-title {
+      word-spacing: 20px;
+      letter-spacing: 5px;
+    }
+
+  </style>
+</head>
+<body>
+    <div class="wrapper">
+      <h1>10k Top Ruckers</h1>
+      <p id="rucker-title">Name | Distance | Time | lbs | Location | Date</p>
+      <div id="top-ruckers">
+      
+      </div>
+      <p><a href="index.html">Go Back</a></p>
+      <button onclick="
+        const res = fetch('ruckers.json');
+        const ruckers = JSON.parse(res);
+
+        const para = document.createElement('p');
+        const hr = document.createElement('hr');
+        para.innerText = ruckers.tracking || 'SGT Ramon Garcia | 10k | 3:02 hrs | 35 lbs | BPTA | 8 February 2026'; // To be updated
+
+        document.getElementById('top-ruckers').appendChild(para);
+        document.getElementById('top-ruckers').appendChild(hr);
+      ">Update List</button>
+    </div>
+</body>
+</html>

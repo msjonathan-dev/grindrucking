@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rucking Event Registration</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f2f4f7;
+      margin: 0;
+      padding: 0;
+    }
+
+    h2 {
+      margin-top: 30px;
+      text-align: center;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    form {
+      width: 600px;
+    }
+
+    p {
+      text-align: center;
+      color: #555;
+      margin-bottom: 25px;
+    }
+
+    label {
+      display: block;
+      margin-top: 15px;
+      font-weight: 600;
+      color: #444;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+      transition: border-color 0.2s;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: #0078d4;
+      outline: none;
+      box-shadow: 0 0 0 2px rgba(0,120,212,0.2);
+    }
+
+    #rules {
+      font-size: 14px;
+      color: gray;
+    }
+
+    button {
+      background: #000000;
+      color: white;
+      padding: 14px 28px;
+      border: none;
+      border-radius: 6px;
+      font-size: 18px;
+      font-weight: 600;
+      cursor: pointer;
+      margin-top: 20px;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Submit Ruck</h2>
+
+  <div class="container">
+    <form action="/tracking" method="POST" enctype="multipart/form-data">
+      <label>Order ID *</label>
+      <input type="text" name="image_ids" placeholder="00-248424953">
+
+      <label>Rank (Optional)</label>
+      <input type="text" name="rank">
+
+      <label>First Name *</label>
+      <input type="text" name="first_name" required>
+
+      <label>Middle Name (Optional)</label>
+      <input type="text" name="middle_name">
+
+      <label>Last Name *</label>
+      <input type="text" name="last_name" required>
+
+      <label>Email *</label>
+      <input type="email" name="email" required>
+
+      <label>Location *</label>
+      <input type="text" name="email" required>
+
+      <label>Upload Image * <span id="rules">JPG or PNG</span></label>
+      <input type="file" name="images[]" multiple accept="image/*">
+
+      <p><button type="submit">Submit</button></p>
+
+      <p><a href="index.html">Go Back</a></p>
+    </form>
+  </div>
+
+</body>
+</html>
