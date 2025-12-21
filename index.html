@@ -113,16 +113,21 @@
         <p id="price">$15.00 USD <span id="discount">$25.00</span></p>
         <p>Dates: 1 - 7 February 2026 | Deadline: 3 February 2026</p>
         <p>Receive a rucking certificate and record your time in the <a href="topruckers.html">Top Ruckers</a>.</p>
-        <p id="spots">30<span id="rem"></span> remaining</span></p>
+        <p id="spots"><span id="rem">0</span> remaining</span></p>
         <button onclick="window.location.href='register.html'">Register Now</button>
         <p><a href="submitruck.html">Submit your Ruck!</a></p>
         <p id="rules">Rules: Upload a JPG or PNG of the route with distance, time and date.</p>
       </div>
     </div>
   </div>
-  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      const rem = document.getElementById('rem').innerText = '355';
+    });
+  </script>
 </body>
 </html>
+
 
 
 
