@@ -54,7 +54,7 @@
         let ruckingEvent = true;
 
         if(ruckingEvent) {
-          para.innerText = '10k ruck is still closed.';
+          document.getElementById('topRuckers').innerHTML = '<h1>10k ruck is still closed.</h1>';
         } else {
           para.innerText = rucks.john || 'There was an issue when searching for ruckers. Please try again later.';
         }
@@ -66,6 +66,7 @@
 </body>
 
 </html>
+
 
 
 
