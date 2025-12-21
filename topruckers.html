@@ -39,21 +39,24 @@
         <p>February 2026 10k Ruck is still closed.</p>
       </div>
       <p><a href="index.html">Go Back</a></p>
-      <button onclick="
-        const res = fetch('ruckers.json');
-        const ruckers = JSON.parse(res);
-
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', async function getRuckers() {
+        const data = await fetch('https://msjonathan-dev.github.io/grindrucking/ruckers.json')
+        const rucks = await data.json()
+        
         const para = document.createElement('p');
         const hr = document.createElement('hr');
-        para.innerText = ruckers.tracking || 'SGT Ramon Garcia | 10k | 3:02 hrs | 35 lbs | BPTA | 8 February 2026'; // To be updated
+        para.innerText = rucks.john || 'There was an issue when searching for the ruckers. Please try again later.';
 
         document.getElementById('top-ruckers').appendChild(para);
         document.getElementById('top-ruckers').appendChild(hr);
-      ">Update List</button>
-    </div>
+      });
+    </script>
 </body>
 
 </html>
+
 
 
 
