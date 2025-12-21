@@ -121,12 +121,15 @@
     </div>
   </div>
   <script>
-    document.addEventListener('DOMContentLoaded', function() {
-      const rem = document.getElementById('rem').innerText = '355';
+    document.addEventListener('DOMContentLoaded', async function() {
+      const data = await fetch('https://msjonathan-dev.github.io/grindrucking/remaining.json');
+      const rem = await data.json();
+      document.getElementById('rem').innerText = rem.remaining || 'Error';
     });
   </script>
 </body>
 </html>
+
 
 
 
