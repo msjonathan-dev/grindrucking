@@ -41,6 +41,7 @@
       <p>Please allow 24 hours after submitting</p>
       <p id="ruckerTitle">Name | Distance | Time | lbs | Location | Date</p>
       <div id="topRuckers"></div>
+      <h1>10k ruck is still closed.</h1>
       <p><a href="index.html">Go Back</a></p>
     </div>
     <script defer>
@@ -51,11 +52,9 @@
         const para = document.createElement('p');
         const hr = document.createElement('hr');
 
-        let ruckingEvent = true;
+        let ruckingEventOpen = false;
 
-        if(ruckingEvent) {
-          document.getElementById('topRuckers').innerHTML = '<h1>10k ruck is still closed.</h1>';
-        } else {
+        if(ruckingEventOpen) {
           para.innerText = rucks.john || 'There was an issue when searching for ruckers. Please try again later.';
         }
 
@@ -66,6 +65,7 @@
 </body>
 
 </html>
+
 
 
 
