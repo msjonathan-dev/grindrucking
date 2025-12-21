@@ -35,7 +35,7 @@
       <h1>10k Top Ruckers</h1>
       <p>Please allow 24 hours after submitting</p>
       <p id="rucker-title">Name | Distance | Time | lbs | Location | Date</p>
-      <div id="top-ruckers"></div>
+      <div id="topruckers"></div>
       <p><a href="index.html">Go Back</a></p>
     </div>
     <script>
@@ -54,13 +54,14 @@
           para.innerText = rucks.john || 'There was an issue when searching for ruckers. Please try again later.';
         }
 
-        document.getElementById('top-ruckers').appendChild(para);
-        document.getElementById('top-ruckers').appendChild(hr);
+        document.getElementById('topruckers').appendChild(para);
+        document.getElementById('topruckers').appendChild(hr);
       });
     </script>
 </body>
 
 </html>
+
 
 
 
