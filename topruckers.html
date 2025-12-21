@@ -23,19 +23,23 @@
       text-align: center;
     }
 
-    #rucker-title {
+    #ruckerTitle {
       word-spacing: 20px;
       letter-spacing: 5px;
     }
 
+    #topRuckers {
+      word-spacing: 20px;
+      letter-spacing: 5px;
+    }
   </style>
 </head>
 <body>
     <div class="wrapper">
       <h1>10k Top Ruckers</h1>
       <p>Please allow 24 hours after submitting</p>
-      <p id="rucker-title">Name | Distance | Time | lbs | Location | Date</p>
-      <div id="topruckers"></div>
+      <p id="ruckerTitle">Name | Distance | Time | lbs | Location | Date</p>
+      <div id="topRuckers"></div>
       <p><a href="index.html">Go Back</a></p>
     </div>
     <script>
@@ -49,18 +53,19 @@
         let ruckingEvent = false;
 
         if(ruckingEvent) {
-          para.innerText = '10k Ruck is still closed.';
+          para.innerText = '10k ruck is still closed.';
         } else {
           para.innerText = rucks.john || 'There was an issue when searching for ruckers. Please try again later.';
         }
 
-        document.getElementById('topruckers').appendChild(para);
-        document.getElementById('topruckers').appendChild(hr);
+        document.getElementById('topRuckers').appendChild(para);
+        document.getElementById('topRuckers').appendChild(hr);
       });
     </script>
 </body>
 
 </html>
+
 
 
 
