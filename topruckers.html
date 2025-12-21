@@ -43,7 +43,7 @@
       <div id="topRuckers"></div>
       <p><a href="index.html">Go Back</a></p>
     </div>
-    <script>
+    <script defer>
       document.addEventListener('DOMContentLoaded', async function getRuckers() {
         const data = await fetch('https://msjonathan-dev.github.io/grindrucking/ruckers.json')
         const rucks = await data.json()
@@ -66,6 +66,7 @@
 </body>
 
 </html>
+
 
 
 
