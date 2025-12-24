@@ -22,32 +22,16 @@
         <p id="price">$15.00 USD <span id="discount">$25.00</span></p>
         <p>Dates: 1-7 February 2026 &bull; Deadline: 3 February 2026</p>
         <p>Receive a rucking certificate and your record time in the <a href="topruckers.html">Top Ruckers.</a></p>
-        <p id="spots"><span id="rem">0</span> remaining</span></p>
+        <p id="spots"><span id="rem">39</span> remaining</span></p>
         <button onclick="window.location.href='https://buy.stripe.com/test_fZu6oHaZN9yt2Ii5VGawo00'">Register Now</button>
-        <!--
-        <script async
-          src="https://js.stripe.com/v3/buy-button.js">
-        </script>
-        <stripe-buy-button
-          buy-button-id="buy_btn_1Sgu7cEQaPQMpMmixqzkbKZD"
-          publishable-key="pk_test_51SgpJgEQaPQMpMmiog7kVH5u652ywHbVRgshW2Nikff7LYisCZOqkzbmxXCWyLz3G98MBBzdv6nIYswFDXrm5YHQ00bmTCIhoU"
-        >
-        </stripe-buy-button>
-        -->
         <p><a href="https://docs.google.com/forms/d/e/1FAIpQLSfltHAmbnDa1IR4ZhjLLwUbaf57i8_z87tGm-fP7RGphZ1llw/viewform">Submit your Ruck!</a></p>
         <!--<p id="rules">Rules: Upload a jpeg, jpg or png photo of the route with distance, time and date.</p>-->
       </div>
     </div>
   </div>
-  <script>
-    document.addEventListener('DOMContentLoaded', async function() {
-      const data = await fetch('https://msjonathan-dev.github.io/grindrucking/remaining.json');
-      const rem = await data.json();
-      document.getElementById('rem').innerText = rem.remaining || 'Error';
-    });
-  </script>
 </body>
 </html>
+
 
 
 
