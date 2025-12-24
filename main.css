@@ -1,0 +1,113 @@
+    body {
+      font-family: "Segoe UI", Arial, sans-serif;
+      background: #f2f4f7;
+      margin: 0;
+      padding: 0;
+    }
+    
+    #medal {
+      width: 100%;
+      max-width: 350px;
+      border-radius: 10px;
+      margin: 20px 0;
+    }
+
+    #poland {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+    }
+
+    #arms {
+      height: 85px;
+      width: 75px;
+    }
+
+    #flag {
+      height: 47px;
+      width: 70px;
+    }
+      
+    p {
+      font-size: 18px;
+      color: #444;
+      line-height: 1.4;
+    }
+
+    #quote {
+      font-size: 14px;
+      text-align: center;
+    }
+    
+    .images {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .wrapper {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      gap: 50px;
+    }
+
+    .details {
+      margin-left: none;
+      width: 400px;
+    } 
+
+    #price {
+      font-size: 24px;
+    }
+
+    #discount {
+      color: red;
+      text-decoration: line-through;
+    }
+
+    #spots {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: 600;
+      color: rgb(0, 158, 3);
+    }
+
+    button {
+      background: #000000;
+      color: white;
+      padding: 14px 48px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    #rules {
+      font-size: 16px;
+    }
+    
+    @media only screen and (max-width: 429px) {
+      .container {
+        flex-direction: column;
+        align-items: center;
+      }
+      
+      #medal {
+        max-width: 100%;
+        border-radius: 0;
+        margin: 0;
+      }
+
+      #poland {
+        margin-top: 60px;
+      }
+    }
